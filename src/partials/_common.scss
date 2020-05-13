@@ -7,5 +7,28 @@
 body {
     font-family: $brand-font;
     color: $brand-dark;
-    background-color: $brand-light;
+    background-color: $white;
+}
+
+@mixin custom-button {
+    &__button{
+        border: 1px solid $blue;
+        border-radius: 5px;
+        align-self: center;
+        padding: 5px;
+        img{
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+        }
+        span{
+            color: $blue;
+        }
+    }
+    &__button:hover{
+        background-color: $blue;
+        span{
+            color: $white;
+        }
+    }
 }

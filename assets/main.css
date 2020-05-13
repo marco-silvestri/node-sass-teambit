@@ -10,7 +10,7 @@
 body {
   font-family: "Rubik", sans-serif;
   color: #58402c;
-  background-color: #ffe7d2;
+  background-color: #FFF;
 }
 
 .navmenu {
@@ -20,7 +20,7 @@ body {
   background-color: #FFF;
   width: 70%;
   margin: auto;
-  padding: 20px;
+  padding: 20px 0px;
   border-bottom: 1px solid #CCC;
   font-size: 14px;
 }
@@ -35,21 +35,70 @@ body {
   padding: 10px;
 }
 
-.navmenu__list__element__sign-up {
+.navmenu__list__element__button {
   border: 1px solid #30488f;
   border-radius: 5px;
   align-self: center;
   padding: 5px;
 }
 
-.navmenu__list__element__sign-up img {
+.navmenu__list__element__button img {
   width: 20px;
   height: 20px;
   vertical-align: middle;
 }
 
-.navmenu__list__element__sign-up span {
+.navmenu__list__element__button span {
   color: #30488f;
+}
+
+.navmenu__list__element__button:hover {
+  background-color: #30488f;
+}
+
+.navmenu__list__element__button:hover span {
+  color: #FFF;
+}
+
+.jumbotron {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFF;
+  width: 70%;
+  margin: auto;
+  padding: 20px 0px;
+  border-bottom: 1px solid #CCC;
+  font-size: 14px;
+}
+
+.jumbotron__caption__button-area {
+  display: flex;
+}
+
+.jumbotron__caption__button-area__button {
+  border: 1px solid #30488f;
+  border-radius: 5px;
+  align-self: center;
+  padding: 5px;
+}
+
+.jumbotron__caption__button-area__button img {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+
+.jumbotron__caption__button-area__button span {
+  color: #30488f;
+}
+
+.jumbotron__caption__button-area__button:hover {
+  background-color: #30488f;
+}
+
+.jumbotron__caption__button-area__button:hover span {
+  color: #FFF;
 }
 
 

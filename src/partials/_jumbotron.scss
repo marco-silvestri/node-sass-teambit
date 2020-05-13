@@ -1,0 +1,15 @@
+.jumbotron{
+    @include flex-horizontal;
+    background-color: $white;
+    width: 70%;
+    margin: auto;
+    padding: 20px 0px;
+    border-bottom: 1px solid $light-gray;
+    font-size: $small;
+    &__caption{
+        &__button-area{
+            display: flex;
+            @include custom-button;
+        }
+    }
+}

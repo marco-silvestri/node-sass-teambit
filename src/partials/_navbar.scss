@@ -1,12 +1,10 @@
 .navmenu{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #FFF;
+    @include flex-horizontal;
+    background-color: $white;
     width: 70%;
     margin: auto;
-    padding: 20px;
-    border-bottom: 1px solid #CCC;
+    padding: 20px 0px;
+    border-bottom: 1px solid $light-gray;
     font-size: $small;
     &__list{
         list-style: none;
@@ -14,20 +12,7 @@
         justify-content: flex-end;
         &__element{
             padding: 10px;
-            &__sign-up{
-                border: 1px solid $blue;
-                border-radius: 5px;
-                align-self: center;
-                padding: 5px;
-                img{
-                    width: 20px;
-                    height: 20px;
-                    vertical-align: middle;
-                }
-                span{
-                    color: $blue;
-                }
-            }
+            @include custom-button;
         }
     }
 
