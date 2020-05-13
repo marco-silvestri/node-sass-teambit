@@ -10,6 +10,12 @@ body {
     background-color: $white;
 }
 
+@mixin jumbotron-text($fontsize) {
+    font-size: $fontsize;
+    line-height: 1.5;
+    padding: 20px 0;
+}
+
 //  Buttons w/ modifiers
 @mixin custom-button {
     &__button{

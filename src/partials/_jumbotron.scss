@@ -4,24 +4,32 @@
     width: 70%;
     margin: auto;
     padding: 50px 0;
-    font-size: $small;
     &__caption{
-        width: 40%;
         h2 {
-            font-size: $x-large;
+            @include jumbotron-text($xlarge);
         }
         p {
-            font-size: $medium;
+            @include jumbotron-text($medium);
         }
         &__button-area{
             display: flex;
+            text-align-last: left;
             @include custom-button;
             @include --button-blue;
+            line-height: 1.5;
+            margin: 20px 0;
+            span {
+                padding: 0 20px;
+                align-self: center;
+            }
         }
     }
     &__hero{
+        text-align: right;
+        align-self: flex-start;
+        max-width: 40%;
         img{
-            max-width: 500px;
+            max-width: 100%;
         }
     }
 }
