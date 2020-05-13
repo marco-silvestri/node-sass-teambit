@@ -36,9 +36,11 @@ body {
 }
 
 .navmenu__list__element__button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   border: 1px solid #30488f;
   border-radius: 5px;
-  align-self: center;
   padding: 5px;
 }
 
@@ -62,14 +64,25 @@ body {
 
 .jumbotron {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   background-color: #FFF;
   width: 70%;
   margin: auto;
-  padding: 20px 0px;
-  border-bottom: 1px solid #CCC;
+  padding: 50px 0;
   font-size: 14px;
+}
+
+.jumbotron__caption {
+  width: 40%;
+}
+
+.jumbotron__caption h2 {
+  font-size: 48px;
+}
+
+.jumbotron__caption p {
+  font-size: 24px;
 }
 
 .jumbotron__caption__button-area {
@@ -77,9 +90,11 @@ body {
 }
 
 .jumbotron__caption__button-area__button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   border: 1px solid #30488f;
   border-radius: 5px;
-  align-self: center;
   padding: 5px;
 }
 
@@ -89,16 +104,24 @@ body {
   vertical-align: middle;
 }
 
-.jumbotron__caption__button-area__button span {
-  color: #30488f;
-}
-
-.jumbotron__caption__button-area__button:hover {
+.jumbotron__caption__button-area__button {
   background-color: #30488f;
 }
 
-.jumbotron__caption__button-area__button:hover span {
+.jumbotron__caption__button-area__button span {
   color: #FFF;
+}
+
+.jumbotron__caption__button-area__button:hover {
+  background-color: #FFF;
+}
+
+.jumbotron__caption__button-area__button:hover span {
+  color: #30488f;
+}
+
+.jumbotron__hero img {
+  max-width: 500px;
 }
 
 

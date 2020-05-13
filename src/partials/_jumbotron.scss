@@ -1,15 +1,27 @@
 .jumbotron{
-    @include flex-horizontal;
+    @include flex-horizontal-sa;
     background-color: $white;
     width: 70%;
     margin: auto;
-    padding: 20px 0px;
-    border-bottom: 1px solid $light-gray;
+    padding: 50px 0;
     font-size: $small;
     &__caption{
+        width: 40%;
+        h2 {
+            font-size: $x-large;
+        }
+        p {
+            font-size: $medium;
+        }
         &__button-area{
             display: flex;
             @include custom-button;
+            @include --button-blue;
+        }
+    }
+    &__hero{
+        img{
+            max-width: 500px;
         }
     }
 }

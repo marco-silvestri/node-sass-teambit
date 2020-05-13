@@ -10,17 +10,23 @@ body {
     background-color: $white;
 }
 
+//  Buttons w/ modifiers
 @mixin custom-button {
     &__button{
+        @include flex-horizontal-sb;
         border: 1px solid $blue;
         border-radius: 5px;
-        align-self: center;
         padding: 5px;
         img{
             width: 20px;
             height: 20px;
             vertical-align: middle;
         }
+    }
+}
+
+@mixin --button-white {
+    &__button{
         span{
             color: $blue;
         }
@@ -29,6 +35,21 @@ body {
         background-color: $blue;
         span{
             color: $white;
+        }
+    }
+}
+
+@mixin --button-blue {
+    &__button{
+        background-color: $blue;
+        span{
+            color: $white;
+        }
+    }
+    &__button:hover{
+        background-color: $white;
+        span{
+            color: $blue;
         }
     }
 }

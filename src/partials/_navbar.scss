@@ -1,5 +1,5 @@
 .navmenu{
-    @include flex-horizontal;
+    @include flex-horizontal-sb;
     background-color: $white;
     width: 70%;
     margin: auto;
@@ -13,6 +13,7 @@
         &__element{
             padding: 10px;
             @include custom-button;
+            @include --button-white;
         }
     }
 

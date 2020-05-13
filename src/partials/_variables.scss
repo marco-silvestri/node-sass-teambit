@@ -7,15 +7,22 @@ $light-gray: #CCC;
 
 //  Font sizes
 $small: 14px;
-$medium: 18px;
+$medium: 24px;
+$x-large: 48px;
 
 //  Font family
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
 $brand-font: 'Rubik', sans-serif;
 
 //  Positioning
-@mixin flex-horizontal {
+@mixin flex-horizontal-sb {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flex-horizontal-sa {
+    display: flex;
+    justify-content: space-around;
     align-items: center;
 }
