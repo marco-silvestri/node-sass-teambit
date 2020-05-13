@@ -13,4 +13,43 @@ body {
   background-color: #ffe7d2;
 }
 
+.navmenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFF;
+  width: 70%;
+  margin: auto;
+  padding: 20px;
+  border-bottom: 1px solid #CCC;
+  font-size: 14px;
+}
+
+.navmenu__list {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navmenu__list__element {
+  padding: 10px;
+}
+
+.navmenu__list__element__sign-up {
+  border: 1px solid #30488f;
+  border-radius: 5px;
+  align-self: center;
+  padding: 5px;
+}
+
+.navmenu__list__element__sign-up img {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+
+.navmenu__list__element__sign-up span {
+  color: #30488f;
+}
+
 
