@@ -400,4 +400,52 @@ body {
   }
 }
 
+.footer {
+  display: flex;
+  justify-content: center;
+  width: calc((100%/8)*8);
+  margin: auto;
+  padding: 50px;
+}
+
+.footer__motto {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-self: start;
+  width: calc((100%/8)*2);
+}
+
+.footer__motto img {
+  width: 80px;
+  margin-right: 10px;
+}
+
+.footer__motto p {
+  line-height: 1.5;
+}
+
+.footer__site-map {
+  width: calc((100%/8)*2);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer__site-map__element {
+  align-self: flex-start;
+  display: inline-block;
+  list-style: none;
+  padding: 10px;
+}
+
+.footer__site-map__element li a {
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer__site-map__element li:first-of-type {
+  font-weight: 700;
+}
+
 
