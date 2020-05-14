@@ -1,20 +1,16 @@
-.widget{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.widget-card{
+    display: block;
     background-color: $brand-light;
+    text-align: center;
     h1 {
         text-align: center;
     }
     &__cards-area{
-        padding: 100px 50px;
+        padding: 50px;
         width: $col-8;
-        @include flex-horizontal-sa;
-        text-align: center;
         &__card{
-            @include flex-horizontal-sa;
-            flex-direction: column;
-            width: $col-2;
+            margin: 100px 0;
+            width: $col-8;
             img{
                 width: 150px;
                 height: 120px;
@@ -29,5 +25,23 @@
         width: $col-7;
         border-bottom: 1px solid $light-gray;
         margin: 50px 0;
+    }
+}
+
+@media all and (min-width: 768px){
+    .widget-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__cards-area{
+            padding: 100px 50px;
+            @include flex-horizontal-sa;
+            text-align: center;
+            &__card{
+                @include flex-horizontal-sa;
+                flex-direction: column;
+                width: $col-2;
+            }
+        }
     }
 }

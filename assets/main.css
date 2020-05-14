@@ -115,8 +115,8 @@ body {
 
 .jumbotron__caption__button-area {
   display: flex;
-  -moz-text-align-last: left;
-       text-align-last: left;
+  -moz-text-align-last: center;
+       text-align-last: center;
   line-height: 1.5;
   margin: 20px 0;
 }
@@ -197,48 +197,103 @@ body {
   }
 }
 
-.widget {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.widget-card {
+  display: block;
   background-color: #ffe7d2;
-}
-
-.widget h1 {
   text-align: center;
 }
 
-.widget__cards-area {
-  padding: 100px 50px;
+.widget-card h1 {
+  text-align: center;
+}
+
+.widget-card__cards-area {
+  padding: 50px;
   width: calc((100%/8)*8);
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  text-align: center;
 }
 
-.widget__cards-area__card {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
-  width: calc((100%/8)*2);
+.widget-card__cards-area__card {
+  margin: 100px 0;
+  width: calc((100%/8)*8);
 }
 
-.widget__cards-area__card img {
+.widget-card__cards-area__card img {
   width: 150px;
   height: 120px;
 }
 
-.widget__image {
+.widget-card__image {
   width: 300px;
   margin-bottom: 20px;
 }
 
-.widget__separator {
+.widget-card__separator {
   width: calc((100%/8)*7);
   border-bottom: 1px solid #CCC;
   margin: 50px 0;
+}
+
+@media all and (min-width: 768px) {
+  .widget-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .widget-card__cards-area {
+    padding: 100px 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+  }
+
+  .widget-card__cards-area__card {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: calc((100%/8)*2);
+  }
+}
+
+.widget-learn__section {
+  display: block;
+  text-align: center;
+  overflow: hidden;
+}
+
+.widget-learn__section img {
+  width: calc((100%/8)*8);
+  max-width: 760px;
+}
+
+.widget-learn__section__caption {
+  margin: auto;
+  width: calc((100%/8)*6);
+}
+
+.widget-learn__section__caption img {
+  margin: auto;
+  display: block;
+  width: 200px;
+}
+
+@media all and (min-width: 768px) {
+  .widget-learn__section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .widget-learn__section img {
+    width: calc((100%/8)*4);
+    max-width: 760px;
+  }
+
+  .widget-learn__section:nth-of-type(even) {
+    flex-direction: row-reverse;
+  }
 }
 
 

@@ -1,0 +1,35 @@
+.widget-learn{
+    &__section{
+        display: block;
+        text-align: center;
+        overflow: hidden;
+        img{
+            width: $col-8;
+            max-width: 760px;
+        }
+        &__caption{
+            margin: auto;
+            width: $col-6;
+            img{
+                margin: auto;
+                display: block;
+                width: 200px;
+            }
+        }
+    }
+}
+
+@media all and (min-width: 768px){
+    .widget-learn{
+        &__section{
+            @include flex-horizontal-sa;
+            img{
+                width: $col-4;
+                max-width: 760px;
+            }
+        }
+        &__section:nth-of-type(even){
+            flex-direction: row-reverse;
+        }
+    }
+}

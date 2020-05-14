@@ -11,7 +11,7 @@
         }
         &__button-area{
             display: flex;
-            text-align-last: left;
+            text-align-last: center;
             @include custom-button;
             @include --button-blue;
             line-height: 1.5;
