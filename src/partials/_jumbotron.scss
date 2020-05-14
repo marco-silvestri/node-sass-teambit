@@ -1,6 +1,7 @@
 .jumbotron{
     background-color: $white;
     margin: auto;
+    width: $col-6;
     padding: 50px 0;
     &__caption{
         h2 {
