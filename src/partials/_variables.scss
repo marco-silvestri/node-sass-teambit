@@ -14,6 +14,16 @@ $xlarge: 48px;
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
 $brand-font: 'Rubik', sans-serif;
 
+// 8 Columns layout
+$col-1: calc((100%/8)*1);
+$col-2: calc((100%/8)*2);
+$col-3: calc((100%/8)*3);
+$col-4: calc((100%/8)*4);
+$col-5: calc((100%/8)*5);
+$col-6: calc((100%/8)*6);
+$col-7: calc((100%/8)*7);
+$col-8: calc((100%/8)*8);
+
 //  Positioning
 @mixin flex-horizontal-sb {
     display: flex;

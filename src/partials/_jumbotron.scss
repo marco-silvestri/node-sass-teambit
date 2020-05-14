@@ -1,7 +1,5 @@
 .jumbotron{
-    @include flex-horizontal-sa;
     background-color: $white;
-    width: 70%;
     margin: auto;
     padding: 50px 0;
     &__caption{
@@ -27,9 +25,33 @@
     &__hero{
         text-align: right;
         align-self: flex-start;
-        max-width: 40%;
         img{
-            max-width: 100%;
+            width: 100%;
+        }
+    }
+}
+
+@media all and (max-width: 1140px){
+    .jumbotron{
+        display: block;
+        text-align: center;
+        &__caption{
+            width: $col-8;
+        }
+        &__hero{
+            width: $col-8 ;
+        }
+    }
+}
+
+@media all and (min-width: 1141px){
+    .jumbotron{
+        @include flex-horizontal-sa;
+        &__caption{
+            width: $col-4;
+        }
+        &__hero{
+            width: $col-4 ;
         }
     }
 }

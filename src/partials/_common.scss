@@ -8,6 +8,8 @@ body {
     font-family: $brand-font;
     color: $brand-dark;
     background-color: $white;
+    max-width: 90%;
+    margin: auto;
 }
 
 @mixin jumbotron-text($fontsize) {

@@ -11,6 +11,8 @@ body {
   font-family: "Rubik", sans-serif;
   color: #58402c;
   background-color: #FFF;
+  max-width: 90%;
+  margin: auto;
 }
 
 .navmenu {
@@ -18,7 +20,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: #FFF;
-  width: 70%;
+  width: calc((100%/8)*8);
   margin: auto;
   padding: 20px 0px;
   border-bottom: 1px solid #CCC;
@@ -62,12 +64,39 @@ body {
   color: #FFF;
 }
 
+@media all and (max-width: 1140px) {
+  .jumbotron {
+    display: block;
+    text-align: center;
+  }
+
+  .jumbotron__caption {
+    width: calc((100%/8)*8);
+  }
+
+  .jumbotron__hero {
+    width: calc((100%/8)*8);
+  }
+}
+
+@media all and (min-width: 1141px) {
+  .jumbotron {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .jumbotron__caption {
+    width: calc((100%/8)*4);
+  }
+
+  .jumbotron__hero {
+    width: calc((100%/8)*4);
+  }
+}
+
 .jumbotron {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   background-color: #FFF;
-  width: 70%;
   margin: auto;
   padding: 50px 0;
 }
@@ -131,11 +160,41 @@ body {
 .jumbotron__hero {
   text-align: right;
   align-self: flex-start;
-  max-width: 40%;
 }
 
 .jumbotron__hero img {
-  max-width: 100%;
+  width: 100%;
+}
+
+@media all and (max-width: 1140px) {
+  .jumbotron {
+    display: block;
+    text-align: center;
+  }
+
+  .jumbotron__caption {
+    width: calc((100%/8)*8);
+  }
+
+  .jumbotron__hero {
+    width: calc((100%/8)*8);
+  }
+}
+
+@media all and (min-width: 1141px) {
+  .jumbotron {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .jumbotron__caption {
+    width: calc((100%/8)*4);
+  }
+
+  .jumbotron__hero {
+    width: calc((100%/8)*4);
+  }
 }
 
 

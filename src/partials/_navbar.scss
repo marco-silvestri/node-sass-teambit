@@ -1,7 +1,7 @@
 .navmenu{
     @include flex-horizontal-sb;
     background-color: $white;
-    width: 70%;
+    width: $col-8;
     margin: auto;
     padding: 20px 0px;
     border-bottom: 1px solid $light-gray;
@@ -16,5 +16,29 @@
             @include --button-white;
         }
     }
+}
 
+@media all and (max-width: 1140px){
+    .jumbotron{
+        display: block;
+        text-align: center;
+        &__caption{
+            width: $col-8;
+        }
+        &__hero{
+            width: $col-8 ;
+        }
+    }
+}
+
+@media all and (min-width: 1141px){
+    .jumbotron{
+        @include flex-horizontal-sa;
+        &__caption{
+            width: $col-4;
+        }
+        &__hero{
+            width: $col-4 ;
+        }
+    }
 }
