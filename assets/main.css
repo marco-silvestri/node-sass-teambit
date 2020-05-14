@@ -197,4 +197,48 @@ body {
   }
 }
 
+.widget {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffe7d2;
+}
+
+.widget h1 {
+  text-align: center;
+}
+
+.widget__cards-area {
+  padding: 100px 50px;
+  width: calc((100%/8)*8);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.widget__cards-area__card {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  width: calc((100%/8)*2);
+}
+
+.widget__cards-area__card img {
+  width: 150px;
+  height: 120px;
+}
+
+.widget__image {
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.widget__separator {
+  width: calc((100%/8)*7);
+  border-bottom: 1px solid #CCC;
+  margin: 50px 0;
+}
+
 
